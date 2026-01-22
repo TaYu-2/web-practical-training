@@ -34,11 +34,21 @@ a{
     padding-top: 10px;
 }
 
+li{
+    text-decoration: none;
+
+}
+
 .product-list{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 35px;
     list-style: none;
+}
+
+#footer ul{
+    display: flex;
+    justify-content: space-between;
 }
 
 .product-list img{
