@@ -1,26 +1,16 @@
 @charset "UTF-8";
 
-span{
-    
-}
-
-.navi-mozi li{
+#navi-mozi li{
     list-style: none;
 }
 
-header h1{
-    margin: 23px 0 27px 0;
+.site-title{
+    font-size: 135%;
+    margin: 22px 0 27px 0;
     letter-spacing: 0.5px;
 }
 
-.top{
-
-}
-
-.site-title{
-    font-size: 140%;
-
-}
+/*main*/
 
 .product-list p{
     font-size:12px;
@@ -34,21 +24,11 @@ a{
     padding-top: 10px;
 }
 
-li{
-    text-decoration: none;
-
-}
-
 .product-list{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 35px;
     list-style: none;
-}
-
-#footer ul{
-    display: flex;
-    justify-content: space-between;
 }
 
 .product-list img{
@@ -58,7 +38,7 @@ li{
 .wrapper{
     width: 100%;
     max-width: 1360px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     padding: 0 40px;
 }
 
@@ -70,7 +50,65 @@ li{
     display: block;
     text-align: center;
     margin-top: 40px;
+    font-size: 14px;
 }
+
+/*footer*/
+
+#F-menu ul{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#F-menu li{
+    list-style: none;
+    width: -70px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*item1.html*/
+
+/*ここからitemのデザイン*/
+.item{
+    display: flex;
+    max-width: 950px;
+    justify-content: space-between;
+}
+
+.item-img{
+    width: 42%;
+}
+.item-text{
+    width: 51%;
+    font-size:14px;
+    font-weight:400;
+}
+
+.item-img img{
+    width: 100%;
+}
+
+.page-title{
+    font-size: 14px;
+    font-weight:400;
+    margin-bottom: 30px;
+}
+
+.item .item-text p{
+    margin-bottom: 20px;
+}
+
+/*テーブルの編集*/
+.item table th{
+    text-align: left;
+    font-weight: none;
+}
+
+
 
 /*レスポンシブ対応デザイン*/
 @media(max-width: 600px){
