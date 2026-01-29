@@ -1,20 +1,97 @@
 @charset "UTF-8";
 
-#navi-mozi li{
-    list-style: none;
-}
-
 .site-title{
     font-size: 135%;
     margin: 22px 0 27px 0;
     letter-spacing: 0.5px;
 }
 
+/*スライドメニュー*/
+.menu-btn{
+    position: fixed; /*位置を固定*/
+    right: 1rem; /*右*/
+    top: 1rem; /*上*/
+    z-index: 4; /*重なり位置*/
+    padding: 0.5rem 1rem; /*内側余白*/
+    height: 4rem; /*高さ*/
+    width: 4rem; /*幅*/
+}
+
+#menu-open span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: relative; /*位置を相対化*/
+    display: block; 
+}
+
+#menu-open span:nth-child(1){
+    top:0;
+}
+#menu-open span:nth-child(2){
+    margin: 8px 0; /*ｙ外側余白*/
+}
+#menu-open span:nth-child(3){
+    top: 0;
+}
+
+#menu-close span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: relative; /*位置を相対化*/
+    display: block; 
+}
+
+#menu-close span:nth-child(1){
+    translate: 0 2px; /*移動 x y*/
+    transform: rotate(-315deg); /*変形　回転　-315度*/
+}
+#menu-close span:nth-child(2){
+    opacity: 0; /*透明*/
+}
+#menu-close span:nth-child(3){
+    translate: 0 -2px;
+    transform: rotate(-45deg);
+}
+
+#menu-all{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    /*background-color: rgb(0,0,0,80%);*/
+}
+
+.menu-list{
+    list-style: none; /*リスト装飾なし*/
+}
+
+.menu-list li{
+    margin: 1.5rem 0; /*外側余白*/
+    opacity: 0;
+    display: grid;
+    justify-content: left;
+}
+
+.menu-list a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+
 /*main*/
 
 .product-list p{
     font-size:12px;
     font-weight:400;
+}
+
+.title-min{
+    margin-top: 12px;
 }
 
 a{
@@ -63,11 +140,10 @@ a{
 #F-menu li{
     list-style: none;
     font-size: 12px;
-    font-weight: 400;
 }
 
 .copyright{
-    font-size: ;
+    font-size: 10px;
 }
 
 /*item1.html*/
@@ -77,6 +153,7 @@ a{
     font-size: 14px;
     font-weight:400;
     margin-bottom: 30px;
+    margin-top: 70px;
 }
 
 .item{
@@ -108,6 +185,58 @@ a{
     font-weight: none;
 }
 
+/*COMPANY*/
+
+
+.info{
+    padding-bottom: 50px;
+}
+
+#company{
+    max-width: 600px;
+    margin: 0 0 0 40px;
+}
+
+#company .info{
+    width: 100%;
+    border-collapse: collapse;
+    /*テーブルの隙間を実線にする*/
+}
+
+#company .info th,
+#company .info td{
+    font-weight: normal;
+    border-bottom: 1px solid #dcdbdb;
+    padding: 20px 10px;
+    font-size: 14px;;
+}
+
+/*左の項目*/
+#company .info th{
+    width: 30%;
+    text-align: left;
+    vertical-align: top;
+}
+
+/*左の項目*/
+#company .info td{
+    width: 70%;
+}
+
+/*最後の行だけ下線を消す*/
+#company .info tr:last-child th,
+#company .info tr:last-child td{
+    border-bottom: none;
+}
+
+/*Google Map*/
+#company .map{
+    filter: grayscale(1);
+    width: 100%;
+    height: 300px;
+    margin-bottom: 100px;
+}
+
 
 
 /*レスポンシブ対応デザイン*/
@@ -135,5 +264,31 @@ a{
     .item .item-img,
     .item .item-text{
         width: 100%;
+    }
+
+/*company*/
+    #company .info th,
+    #company .info td{
+        display: block; /*thやtdをただのdivと同じように扱う*/
+        width: 100%;
+        border-bottom: none; /*thとtdの下の線を消す*/
+        padding: 10px 0px; /*上と下の余白は消して、左右は10pxにする*/
+    }
+
+    #company .info tr{
+        border-bottom: 1px solid #dcdbdb;
+        padding: 20px 0;
+    }
+
+    #company .info th{
+        padding-bottom: 2px;
+    }
+
+    #company .info td{
+        margin-bottom: 8px;
+    }
+
+    #company .map {
+        width: 90%;
     }
 }
