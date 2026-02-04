@@ -10,33 +10,32 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header id="header" class="wrapper">
-        <h1 class="site-title"><a href="index.html">Furniture Design</a></h1>
-        <nav class="list-inner">
-            <button type="button" id="menu-open" class="menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+        <h1 class="site-title"><a href="index.html">Profile</a></h1>
+        <div id="navArea">
 
-            <div id="menu-all">
-                <button type="button" id="menu-close" class="menu-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
+        <nav>
+            <div class="menu-inner">
                 <ul class="menu-list">
                     <li><a href="products.html">PRODUCTS</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="company.html">COMPANY</a></li>
-                    <li><a href="index.html">CONTACT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
+
+        <button class="toggle_btn" aria-controls="navArea" aria-label="メニューを開閉">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div id="mask"></div>
+    </div>
     </header>
 
     <main>
