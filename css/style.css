@@ -1,17 +1,35 @@
 @charset "UTF-8";
 
+.back-img{
+    z-index: 1;
+    position: relative;
+    width: 100%;
+}
+
 .site-title{
-    font-size: 1200%;
-    margin: 350px 400px  0 0px ;
+    z-index: 2;
+    position: relative;
+    font-size: 1300%;
+    /* margin: 335px 450px  0 -10px ; */
     letter-spacing: 1px;
     font-weight: 500;
+    translate: 0 -45vh;
+}
+
+.site-title a{
+    color: #dcdbdb;
 }
 
 .title-min{
-    margin: 20px;
+    font-size: 20px;
     letter-spacing: 1px;
-    margin: 0 100px 0 -5px;
-    border: solid 1px #000;
+    margin: 5px 0 -5px;
+    padding: 20px 0 0 0;
+}
+
+.title-min span{
+    border: solid 2px black;
+    padding:0 10px;
 }
 
 /*スライドメニュー*/
@@ -134,13 +152,13 @@ nav .menu-inner .menu-list li a:hover {
 
 /*main*/
 
+main{
+    margin-top: -250px;
+}
+
 .product-list p{
     font-size:12px;
     font-weight:400;
-}
-
-.title-min{
-    margin-top: 12px;
 }
 
 a{
@@ -202,10 +220,10 @@ a{
 
 /*ここからitemのデザイン*/
 .page-title{
-    font-size: 14px;
-    font-weight:400;
-    margin-bottom: 30px;
-    margin-top: 70px;
+    font-size: 70px;
+    font-weight:600;
+    margin-bottom: 40px;
+    margin-left: 100px;
 }
 
 .item{
