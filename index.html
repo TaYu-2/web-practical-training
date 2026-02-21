@@ -3,48 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>MY PROFILE</title>
-    <meta name="description" content="家具の紹介ページ">
-    <meta name="Viewport" content="width=device-width", initial-scale="1">
+    <meta name="description" content="自己紹介">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
     <!-- PCとスマホを切り替えるために必ず必要なコード -->
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <!-- ブラウザによってCSSがずれないようにするためのもの -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.js" defer></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-64UC4BEhTGwk3eGpak4nO2jqtl7liTS+juXkSJ2gPAQPmlClQO7s5UgCeR6US48g" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
 </head>
 
-
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     
-    <img src="img/伊勢エビ3.gif" class="back-img">
+    
+    <img src="img/伊勢エビ5.gif" class="back-img">
     
     <header class="header">
-    <div class="title-min">
-        <a href="index.html" >WEBindex</a>
-    </div>
-
-    <div class="yoko-menu">
-        <ul class="yoko-list">
-            <li class="L1"><a href="#1">自己紹介</a></li>
-            <li class="L2"><a href="#2">趣味</a></li>
-            <li class="L3"><a href="#3">お問い合わせ</a></li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">HOME</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#1"><div class="link-span">自己紹介</div></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#2"><div class="link-span">好きな物</div></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#3"><div class="link-span">お問い合わせ</div></a>
+            </li>
         </ul>
+        </div>
     </div>
+</nav>
 
     <div id="navArea">
-        <nav>
+        <nav class="nav-humberger">
             <div class="menu-inner">
                 <ul class="menu-list">
-                    <li><a href="index.html">PRODUCTS</a></li>
-                    <li><a href="about.html">趣味</a></li>
-                    <li><a href="company.html">COMPANY</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="company.html">MAP</a></li>
+                    <li><a href="contact.html">FORM</a></li>
                 </ul>
             </div>
         </nav>
@@ -58,40 +72,92 @@
         <div id="mask"></div>
     </div>
     </header>
+
+    <!-- <div class="city-site">
+    <p class="city-name">浜島のエビ大王</p>
+    <p class="city-file">詳しくは志摩市のホームページで</p>
+    </div> -->
     <h1 class="site-title"> Profile</h1>
 
     <main class="same-main">
 
         <div id="top" class="wrapper">
-            <h2><div id="1">自己紹介</div></h2>
+            <h2><div class="sub-title" id="1">自己紹介</div></h2>
                 <table class="my-list">
                     <tr>
-                        <td>名前</td>
-                        <td>田野上　侑加</td>
+                        <td class="my-text3">名前</td>
+                        <td class="my-text3">田野上　侑加</td>
                     </tr>
                     <tr>
-                        <td>生年月日</td>
-                        <td>2007年1月4日</td>
+                        <td class="my-text">生年月日</td>
+                        <td class="my-text">2007年1月4日</td>
                     </tr>
                     <tr>
-                        <td>やりたいこと</td>
-                        <td>すごいデザインを作る</td>
+                        <td class="my-text" id="my-text2">夢</td>
+                        <td class="my-text">すごい物を作ってお金持ちになる</td>
+                    </tr>
+                    <tr>
+                        <td class="my-text">やってみたいこと</td>
+                        <td class="my-text">天体観測<br>神社か廃墟巡り</td>
+                    </tr>
+                    <tr>
+                        <td class="my-text">保有資格</td>
+                        <td class="my-text">基本情報技術者<br>Microsoft Office　Excel・Word・PowerPoint</td>
+                    </tr>
+                    <tr>
+                        <td class="my-text">スキル</td>
+                        <td class="my-text">illustrator &emsp;&emsp;&emsp; Photoshop<br>HTML5 &emsp;&emsp;&emsp;&emsp;&thinsp;CSS<br>javascript</td>
                     </tr>
                 </table>
+    <img src="img/arh-lee-zFdZJp_hpKo-unsplash.jpg" width="27%" class="my-photo">
 
-        <h2><div id="2">趣味</div></h2>
-        <h2><div id="3">お問い合わせ</div></h2>
-        <p><a href="company.html">COMPANY</a></p>
-        <p><a href="contact.html">CONTACT</a></p>
+    <h2><div class="sub-title2" id="2">好きな物</div></h2>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <a href="about.html"><img src="img/スマホ２_s.jpg" class="d-block w-100" alt="..."></a>
+        <div class="carousel-caption d-none d-md-block">
+            <h5>メディア作品</h5>
+            <p>サブカル系とか</p>
         </div>
+        </div>
+        <div class="carousel-item">
+        <a href="item1.html"><img src="img/gahag2-0108338313-1.jpg" class="d-block w-100" alt="..."></a>
+        <div class="carousel-caption d-none d-md-block">
+            <h5>ゲーム</h5>
+            <p>ゲーム</p>
+        </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+    <!-- <h2><div class="sub-title" id="3">情報</div></h2> -->
+        
     </main>
     <footer id="F-menu" class="wrapper"> 
         <ul>
-            <li>INSTAGRAM</li>
-            <li>TWITTER</li>
-            <li>FAKEBOOK</li>
-            <p class="copyright">ⒸFurniture Design</p>
+            <li class="F-main" id="3">お問い合わせ</li>
+            <li class="F-link"><a href="company.html">MAP</a></li>
+            <li class="F-link"><a href="contact.html">form</a></li>
+            <p class="copyright">ⒸT.Y profile</p>
         </ul>
     </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
