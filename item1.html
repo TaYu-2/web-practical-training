@@ -2,32 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Furniture Design</title>
+    <title>MY PROFILE</title>
     <meta name="description" content="家具の紹介ページ">
     <meta name="Viewport" content="width=device-width", initial-scale="1">
     <!-- PCとスマホを切り替えるために必ず必要なコード -->
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- ブラウザによってCSSがずれないようにするためのもの -->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.js" defer></script>
 </head>
-<body>
-    <header id="header" class="wrapper">
-        <h1 >
-            <div class="title-min">
-                <span><a href="index.html">Profile</a></span>
-            </div>
-        </h1>
 
-        <div id="navArea">
-        <nav>
+<body class="back-contact">
+    <header id="header" class="wrapper">
+        <span class="home-span"><a class="home-min" href="index.html">HOME</a></span>
+        <h2 class="like-title" id="media-title">メディア作品</h2>
+
+    <div id="navArea">
+        <nav class="nav-humberger">
             <div class="menu-inner">
                 <ul class="menu-list">
-                    <li><a href="products.html">PRODUCTS</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="company.html">COMPANY</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="company.html">MAP</a></li>
+                    <li><a href="contact.html">FORM</a></li>
                 </ul>
             </div>
         </nav>
@@ -42,39 +40,20 @@
     </div>
     </header>
 
-    <main>
-        <div class="content wrapper">
-            <p class="page-title">プロダクトタイトル</p>
-            <div class="item">
-                <div class="item-img">
-                    <img src="img/item1.jpg" alt="">
-                </div>
-                <div class="item-text">
-                    <p>テキスト</p>
-                    <p>テキスト</p>
-                    <p>￥99,999</p>
-                    <dl>
-                        <dt>SIZE：</dt>
-                        <dd>W999 × D999 × H999</dd>
-                        <dt>COLOR</dt>
-                        <dd>テキスト</dd>
-                        <dt>MATERIAL：</dt>
-                        <dd>テキスト</dd>
-                    </dl>
-                </div>
-            </div>
-            <a href="index.html" class="link-text">Back To Products</a>
-        </div>
+    <main class="sub-main">
+        <h2 class="media-setumei">映像</h2>
+        <img src="img/メダリスト漫画.jpg" alt="medal" class="img-medal">
+        <img src="https://medalist-pr.com/assets/special-gallery/vis/6.webp" alt="medal2" class="img-medal">
+        <img src="img/true_.jpg" alt="true" class="img-medal">
+        <img src="img/true2.jpg" alt="true" class="img-medal">
+        <h3>メダリスト（漫画・アニメ）</h3>
+        <p class="media-syousai">オリンピック優勝を目指してる話です</p>
+        <p class="media-syousai">ストーリーが熱くて面白いです。漫画の絵がきれい</p>
+
+        <h3>トゥルーマン・ショー（映画）</h3>
+        <p class="media-syousai">主人公の人生が番組（エンタメ？）にされてる話です</p>
+        <p class="media-syousai">終わり方が好きです</p>
     </main>
 
-    <footer id="F-menu" class="wrapper"> 
-        <ul>
-            <li>INSTAGRAM</li>
-            <li>TWITTER</li>
-            <li>FAKEBOOK</li>
-            <p class="copyright">ⒸFurniture Design</p>
-        </ul>
-        
-    </footer>
 </body>
 </html>

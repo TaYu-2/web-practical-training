@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Furniture Design</title>
+    <title>CONTACT</title>
     <meta name="description" content="家具の紹介ページ">
     <meta name="Viewport" content="width=device-width", initial-scale="1">
     <!-- PCとスマホを切り替えるために必ず必要なコード -->
@@ -14,9 +14,10 @@
     <script src="js/main.js" defer></script>
 </head>
 
-<body>
+<body class="back-contact">
     <header id="header" class="wrapper">
-        <div class="navbar-min"><a class="navbar-brand" href="index.html">HOME</a>
+        <span class="home-span"><a class="home-min" href="index.html">HOME</a></span>
+        <h2 class="page-title" id="contact-title">Contact</h2>
 
     <div id="navArea">
         <nav class="nav-humberger">
@@ -41,7 +42,6 @@
 
     <main class="sub-main">
         <div class="contact wrapper">
-            <h1 class="page-title" id="contact-title">Contact</h1>
                 <form id="contact-form" action="#" method="post">
                     お名前
                     <input type="text" name="name" placeholder="山田 太郎"><br><br>
@@ -58,15 +58,15 @@
                     お問い合わせ種別<br>
                     <select class="select-list" name="question" >
                         <option class="option-1">選択してください</option>
-                        <option>修理・サポート</option>
+                        <option>見学</option>
                         <option>インターンシップ・説明会</option>
                     </select><br><br>
-                    興味のある商品<br>
-                    <input type="checkbox" name="select" checked>机
-                    <input type="checkbox" name="select">椅子
-                    <input type="checkbox" name="select">照明
+                    興味のある内容<br>
+                    <input type="checkbox" name="select" checked>１限目　
+                    <input type="checkbox" name="select">２限目　
+                    <input type="checkbox" name="select">３限目　
                     <input type="checkbox" name="select">その他<br><br>
-                    希望納期<br>
+                    希望日<br>
                     <input type="date" name="date" class="data-1"><br><br>
                     添付ファイル<br>
                     <input type="file" name="file"><br><br><br><br>

@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
-h2,p,a,li,td,th,h1{color: white;}
+/*Loading*/
+
+h2,p,a,li{color: white;}
 
 .back-img{
     z-index: 1;
     position: relative;
     width: 100%;
-    top: 40px;
 }
 
 .site-title{
@@ -15,10 +16,19 @@ h2,p,a,li,td,th,h1{color: white;}
     font-size: 1500%;
     letter-spacing: 1px;
     font-weight: 500;
-    translate: 2vw -41vh;
+    translate: 2vw -58vh;
     color: white;
-    margin-right: 100px;
+    margin-right: 1000px;
 }
+
+.site-text{
+    z-index: 2;
+    position: relative;
+    translate: 77vw -139vh;
+    margin-right: 1000px;
+}
+
+#p-text2{margin-bottom: -5px;}
 
 a{
     text-decoration: none;
@@ -34,7 +44,7 @@ a{
 }
 
 .navbar-nav{
-    margin-left: 640px;
+    margin-left: 620px;
 }
 
 .nav-item a{
@@ -52,11 +62,34 @@ a{
     font-size: 43px;
     margin-bottom: 0;
     margin-left: 15px;
-    margin-right: -2px;
+    margin-right: -20px;
 }
 
-.navbar-min{
+a.home-min{
+    color: #000;
+    font-size: 27px;
+}
 
+.home-span{
+    border: solid 3px black;
+    padding: 13px 11px 7px 11.5px;
+}
+
+.page-title{
+    font-size: 50px;
+    font-weight:700;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    color: #000;
+    margin-left: 200px;
+}
+
+#contact-title{
+    margin-left: 190px;
+}
+
+#header{
+    padding-top: 10px;
 }
 
 /*スライドメニュー*/
@@ -180,52 +213,63 @@ nav .menu-inner .menu-list li a:hover {
 /*main*/
 
 body{
-    background-color: #6c707e;
+    background-color:rgb(117, 144, 180);
+}
+
+.back-contact{
+    background-color: #fff;
+    margin-top: 20px;
 }
 
 .sub-title{
     text-align: center;
-    margin-top: 100px;
-    font-family: "M PLUS 1p", sans-serif;
-    font-weight: 500;
+    /* margin-top: 30px; */
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-size: 20px;
+    opacity: 0;
+}
+
+.sub-title2{
+    margin-top: -270px;
+    text-align: center;
+    font-family: "Sawarabi Gothic", sans-serif;
+    letter-spacing: 6px;
+    font-weight: 600;
+    font-size: 50px;
+    color: #24282c;
 }
 
 .my-list{
     font-size: 18px;
     font-weight:350;
-    margin-top: 95px;
+    margin-top: 110px;
     margin-left: 60px;
 }
 
 .my-text3{
     padding: 0 30px 10px 30px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #5c5c5c;
+    color: white;
 }
 
 .my-text{
     padding: 17.5px 30px 17.5px 30px;
-    border-bottom: 1px solid #333;
-    
+    border-bottom: 1px solid #5c5c5c;
+    color: white;
 }
 
 .my-photo{
     z-index: 1;
     position: relative;
-    translate: 60vw -68.5vh;
-}
-
-.sub-title2{
-    margin-top: -320px;
-    text-align: center;
-    font-family: "M PLUS 1p", sans-serif;
+    translate: 60vw -72vh;
 }
 
 .carousel-inner{
     margin: auto;
-    margin-top: 65px;
-    width: 74.5%;
+    margin-top: 82px;
+    margin-bottom: 70px;
+    width: 65%;
 }
-
 
 .same-main{
     margin-top: -250px;
@@ -259,7 +303,9 @@ body{
 .F-main{
     list-style: none;
     font-size: 20px;
-    border-style: 1px solid white;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+    margin-bottom: 5px;
     padding-top: 10px;
 }
 
@@ -271,7 +317,7 @@ body{
 }
 
 .F-link a:hover{
-    color: #7dacdb;
+    color: #f3dc2e;
 }
 
 .copyright{
@@ -279,63 +325,6 @@ body{
     font-weight: 300;
     margin-left: 620px;
     padding-top: 12px;
-}
-
-/*item1.html*/
-
-/*ここからitemのデザイン*/
-.item{
-    display: flex;
-    max-width: 950px;
-    justify-content: space-between;
-}
-
-.item-img{
-    width: 42%;
-}
-.item-text{
-    width: 51%;
-    font-size:14px;
-    font-weight:400;
-}
-
-.item-img img{
-    width: 100%;
-}
-
-.item .item-text p{
-    margin-bottom: 20px;
-}
-
-/*テーブルの編集*/
-.page-title{
-    font-size: 14px;
-    font-weight:400;
-    margin-bottom: 30px;
-    margin-top: 70px;
-}
-
-.item{
-    display: flex;
-    max-width: 950px;
-    justify-content: space-between;
-}
-
-.item-img{
-    width: 42%;
-}
-.item-text{
-    width: 51%;
-    font-size:14px;
-    font-weight:400;
-}
-
-.item-img img{
-    width: 100%;
-}
-
-.item .item-text p{
-    margin-bottom: 20px;
 }
 
 /*COMPANY*/
@@ -445,29 +434,51 @@ button.btn {
   text-decoration: none;
   letter-spacing: 0.1em;
   color: #212529;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
   text-align: center;
 }
 
 .btn--orange,
 a.btn--orange {
   color: #fff;
-  background-color: #2186ea;
+  background-color: #7298d0;
+  margin-left: 130px;
 }
 
 .btn--orange:hover,
 a.btn--orange:hover {
   color: #fff;
-  background: #499ff4;
+  background: #c2daf3;
 }
 
 #reset-btn{
-    margin-left: 50px;
-    background-color: rgb(221, 42, 42);
+    margin-left: 115px;
+    background-color: rgb(176, 5, 5);
 }
 
 #reset-btn:hover{
-    background-color: rgb(246, 138, 138);
+    background-color: rgb(221, 124, 124);
+}
+
+
+/*media*/
+.like-title{
+    color: #000;
+    text-align: center;
+    font-size: 50px;
+}
+
+.img-medal{
+    width: 15%;
+    height: 260px;
+}
+
+.media-setumei{
+    color: #000;
+}
+
+.media-syousai{
+    color: #000;
 }
 
 /*レスポンシブ対応デザイン*/
@@ -491,15 +502,6 @@ a.btn--orange:hover {
     .copyright{
         display: flex;
         margin: 1px;
-    }
-
-    /*item*/
-    .item{
-        flex-direction: column;
-    }
-    .item .item-img,
-    .item .item-text{
-        width: 100%;
     }
 
 /*company*/
