@@ -30,7 +30,7 @@ const fadeAnimation = (entries, obs) =>{
                     filter:["blur(.5rem)", "blur(0)"] /* フィルター　ぼかし5rem　⇒0ぼかし無し*/,
                 },
                 {
-                    duration: 1000 /* アニメーション時間*/,
+                    duration: 2000 /* アニメーション時間*/,
                     easing: "ease" /* アニメーション加速度*/,
                     fill: "forwards" /* アニメーション終了状態保持*/,
                 }
@@ -52,3 +52,17 @@ fadeIns.forEach((fadeIn)=>{
     // 監視処理
     fadeObserver.observe(fadeIn);
 });
+
+
+const target = document.querySelector('.food-link a');
+
+const color_keyframes ={
+    color:['red','yellow','green','blue','white','#fab','#eada'] /*色*/
+};
+const color_options ={
+    duration:1000, /*アニメーション時間　２秒*/
+    direction:'alternate', /*アニメーションの再生向き alternate　前後反転*/
+    iterations:Infinity /*繰り返し回数　無限*/
+};
+
+target.animate(color_keyframes,color_options);
